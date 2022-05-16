@@ -10,9 +10,11 @@ type Blog @model {
 
 type Post @model {
   id: ID!
-  title: String!
-  content: String!
+  title: String!npm install quill@1.3.6
+  deck: String!
   type: String!
+  content: String!
   blog: Blog @belongsTo
 }
+
 
